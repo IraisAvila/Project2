@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router";
 import { FaGamepad } from "react-icons/fa";
 import Game from "./Home.js";
 import Gamelist from "./GameList.js";
+import GameSearch from "./GameSearch";
 
 const Navbar = () => {
   return (
@@ -19,7 +20,7 @@ const Navbar = () => {
         <Bars />
         <NavMenu>
           <NavLink to="/gamelist">Game List</NavLink>
-          <NavLink to="/gamelist">Game Search</NavLink>
+          <NavLink to="/gamesearch">Game Search</NavLink>
           <NavLink to="/gamelist">Game Wish List</NavLink>
         </NavMenu>
       </Nav>
@@ -27,6 +28,7 @@ const Navbar = () => {
         <Routes>
           <Route path="/" element={<Game />} />
           <Route path="/gamelist" element={<Gamelist />} />
+          <Route path="/gamesearch" element={<GameSearch />} />
         </Routes>
       </main>
     </>

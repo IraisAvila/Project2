@@ -9,6 +9,7 @@ import Gamelist from "./GameList.js";
 const Navbar = () => {
   return (
     <>
+    
       <Nav>
         <NavLink to="/">
           <h1>
@@ -21,9 +22,6 @@ const Navbar = () => {
           <NavLink to="/gamelist">Game Search</NavLink>
           <NavLink to="/gamelist">Game Wish List</NavLink>
         </NavMenu>
-        {/* <NavBtn>
-                <NavBtnLink to="/signin">sign in</NavBtnLink>
-            </NavBtn> */}
       </Nav>
       <main>
         <Routes>

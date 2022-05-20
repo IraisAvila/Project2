@@ -1,19 +1,21 @@
+/* Image Styling */
 img {
   padding-left: 25%;
   width: 50%;
 }
-
+/* Header 3 Styling */
 h3 {
   text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
 }
-
+/* Header 1 Styling */
 h1 {
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #15cdfc;
   font-size: 40px;
 }
-
+/* Unordered List Styling */
 ul {
   font-size: large;
   list-style: none;
@@ -21,10 +23,11 @@ ul {
   text-align: center;
   list-style-position: inside;
 }
+/* List Styling */
 li {
   text-align: center;
 }
-
+/* Background */
 body {
   height: 200px;
   background-image: linear-gradient(
@@ -32,4 +35,15 @@ body {
     rgba(227, 227, 227, 0),
     rgb(27, 27, 27)
   );
+}
+
+form {
+  padding-left: 43%;
+  
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    padding-left: 23%;
+  }
 }

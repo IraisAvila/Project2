@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import { FaTimes } from 'react-icons/fa'
 import { Link as LinkS} from 'react-router-dom';
+import Sidebar from './Sidebar';
+
+// Sidebar(Mobile Navbar) Styling
 
 export const SidebarContainer = styled.aside`
 position: fixed;
@@ -57,7 +60,7 @@ color: #fff:
 cursor: pointer;
 
 &:hover {
-    color: #01bf71;
+    color: #5cdfc;
     transition: 0.2 ease-in-out;
 }
 `

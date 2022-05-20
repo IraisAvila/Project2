@@ -22,7 +22,7 @@ function Gamelist() {
 
     return (
         <div>
-            <h1>Game List Page</h1>
+            <h1>List of Games  </h1>
             <ul>
                 {listGame.map(game => {
                     return (

@@ -37,9 +37,10 @@ function Gamesearch() {
 
     let searchDisplay = "";
     if (gamesearch3 !== null) {
-        const genres = gamesearch3.genres.map(genre => genre.name + ", ")
-        const platforms = gamesearch3.parent_platforms.map(platform => platform.platform.name + ", ")
-        const stores = gamesearch3.stores.map(store => store.store.name + ", ")
+        const genres = gamesearch3.genres.map(genre => genre.name + "︱ ")
+        const platforms = gamesearch3.parent_platforms.map(platform => platform.platform.name + "︱ ")
+        const stores = gamesearch3.stores.map(store => store.store.name + "︱ ")
+
       searchDisplay = (
         <div>
           <h3>Name: {gamesearch3.name}</h3>
@@ -47,15 +48,16 @@ function Gamesearch() {
           <h3>Platforms: {platforms}</h3>
           <h3>Where to buy: {stores} </h3>
           <img src={gamesearch3.background_image} alt={gamesearch3.name}/>
+
         </div>
       );
     }
     return (
         <div className="App">
-            <h1>Game SEARCH:</h1>
+            <h1>Game Search:</h1>
             <form onSubmit={handleSubmit}>
                 <input onChange={updatedSearch} value={search} type="text" placeholder="Game Name"/>
-                <input type="submit" value="Find Game Info"/>
+                <input type="submit" value="Find Info"/>
             </form>
             <p>{message}</p>
             {searchDisplay}

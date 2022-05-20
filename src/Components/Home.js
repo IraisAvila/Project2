@@ -52,13 +52,54 @@ function Game() {
           alt={game.results[3].name}
         />
         <br />
+        <h3>Name:{game.results[4].name}</h3>
+        <img
+          src={game.results[4].background_image}
+          alt={game.results[4].name}
+        />
+        <br />
+        <h3>Name:{game.results[5].name}</h3>
+        <img
+          src={game.results[5].background_image}
+          alt={game.results[5].name}
+        />
+        <br />
+        <h3>Name:{game.results[6].name}</h3>
+        <img
+          src={game.results[6].background_image}
+          alt={game.results[6].name}
+        />
+         <br />
+        <h3>Name:{game.results[7].name}</h3>
+        <img
+          src={game.results[7].background_image}
+          alt={game.results[7].name}
+        />
+         <br />
+        <h3>Name:{game.results[8].name}</h3>
+        <img
+          src={game.results[8].background_image}
+          alt={game.results[8].name}
+        />
+         <br />
+        <h3>Name:{game.results[9].name}</h3>
+        <img
+          src={game.results[9].background_image}
+          alt={game.results[9].name}
+        />
+         <br />
+        <h3>Name:{game.results[10].name}</h3>
+        <img
+          src={game.results[10].background_image}
+          alt={game.results[10].name}
+        />
       </div>
     );
   }
 
   return (
     <div>
-      <h1>Video Game Info</h1>
+      <h1>Top Video Games</h1>
       {gameDisplay}
     </div>
   );

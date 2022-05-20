@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { NavLink as Link } from "react-router-dom"
 import {FaBars} from 'react-icons/fa'
 
+// Navbar styling
 export const Nav = styled.nav`
     background: #000;
     height: 80px;
@@ -21,7 +22,7 @@ export const NavLink = styled(Link)`
   cursosr: pointer;
 
   &.active {
-      color: #15cdfc;
+      color: #5cdfc;
   }
 
 `
@@ -60,7 +61,7 @@ export const NavBtn = styled.nav`
 `
 export const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  background: #256cel;
+  background: #5cdfc;
   padding: 10px 22px;
   color: #fff;
   border: none;
@@ -72,6 +73,6 @@ export const NavBtnLink = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: #5cdfc;
   }
 `;

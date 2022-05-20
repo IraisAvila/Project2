@@ -1,3 +1,11 @@
-import React from "react"
+import React from "react";
 
-<p>This is a wishlist not yet completed!</p>
+function Wishlist() {
+
+  return (
+      <h2>Loading Wish List...</h2>
+      );
+    }
+  
+    
+export default Wishlist;

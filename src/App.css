@@ -15,6 +15,22 @@ h1 {
   color: #15cdfc;
   font-size: 40px;
 }
+h2 {
+  text-align: center;
+  width: 230px;
+  height: 40px;
+  background-color: #15cdfc;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 8s infinite;
+  animation-timing-function: ease;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 700px;}
+
+}
+
 /* Unordered List Styling */
 ul {
   font-size: large;

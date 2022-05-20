@@ -6,7 +6,7 @@ import { FaGamepad } from "react-icons/fa";
 import Game from "./Home.js";
 import Gamelist from "./GameList.js";
 import GameSearch from "./GameSearch";
-import WishList from "./Components/WishList";
+import Wishlist from "./WishList.js";
 
 const Navbar = ({toggle}) => {
   return (
@@ -30,7 +30,7 @@ const Navbar = ({toggle}) => {
           <Route path="/" element={<Game />} />
           <Route path="/gamelist" element={<Gamelist />} />
           <Route path="/gamesearch" element={<GameSearch />} />
-          <Route path="/wishlist" element={<WishList />} />
+          <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
       </main>
     </>

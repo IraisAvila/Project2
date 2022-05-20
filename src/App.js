@@ -7,12 +7,12 @@ import Sidebar from "./Components/Sidebar";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
   return (
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle}/>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
     </Router>
   );
 }

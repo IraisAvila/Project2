@@ -8,17 +8,16 @@ import Gamelist from "./GameList.js";
 import GameSearch from "./GameSearch";
 import Wishlist from "./WishList.js";
 
-const Navbar = ({toggle}) => {
+const Navbar = ({ toggle }) => {
   return (
     <>
-    
       <Nav>
         <NavLink to="/">
           <h1>
             <FaGamepad size={45} />
           </h1>
         </NavLink>
-        <Bars onClick={toggle}/>
+        <Bars onClick={toggle} />
         <NavMenu>
           <NavLink to="/gamelist">Game List</NavLink>
           <NavLink to="/gamesearch">Game Search</NavLink>

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
+// Main homepage code
 
 function Game() {
   const [game, setGame] = useState(null);
@@ -69,25 +70,25 @@ function Game() {
           src={game.results[6].background_image}
           alt={game.results[6].name}
         />
-         <br />
+        <br />
         <h3>Name:{game.results[7].name}</h3>
         <img
           src={game.results[7].background_image}
           alt={game.results[7].name}
         />
-         <br />
+        <br />
         <h3>Name:{game.results[8].name}</h3>
         <img
           src={game.results[8].background_image}
           alt={game.results[8].name}
         />
-         <br />
+        <br />
         <h3>Name:{game.results[9].name}</h3>
         <img
           src={game.results[9].background_image}
           alt={game.results[9].name}
         />
-         <br />
+        <br />
         <h3>Name:{game.results[10].name}</h3>
         <img
           src={game.results[10].background_image}

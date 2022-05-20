@@ -7,7 +7,7 @@ import Game from "./Home.js";
 import Gamelist from "./GameList.js";
 import GameSearch from "./GameSearch";
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
     
@@ -17,7 +17,7 @@ const Navbar = () => {
             <FaGamepad size={45} />
           </h1>
         </NavLink>
-        <Bars />
+        <Bars onClick={toggle}/>
         <NavMenu>
           <NavLink to="/gamelist">Game List</NavLink>
           <NavLink to="/gamesearch">Game Search</NavLink>

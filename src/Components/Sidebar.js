@@ -1,17 +1,17 @@
 import React from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper,SidebarLink, SidebarMenu  } from './SidebarElements';
 
-const Sidebar = () => {
+const Sidebar = ({isOpen, toggle}) => {
     return (
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="gamelist">Game List</SidebarLink>
-                    <SidebarLink to="gamesearch">Game Search</SidebarLink>
-                    <SidebarLink to="wishlist">Wish List</SidebarLink>
+                    <SidebarLink to="gamelist" onClick={toggle}>Game List</SidebarLink>
+                    <SidebarLink to="gamesearch" onClick={toggle}>Game Search</SidebarLink>
+                    <SidebarLink to="wishlist" onClick={toggle}>Wish List</SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

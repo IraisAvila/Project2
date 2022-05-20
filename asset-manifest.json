@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/IraisAvila/Project2/tree/master/static/css/main.00014088.css",
-    "main.js": "/IraisAvila/Project2/tree/master/static/js/main.2bd084cd.js",
-    "static/js/787.63e6435d.chunk.js": "/IraisAvila/Project2/tree/master/static/js/787.63e6435d.chunk.js",
-    "index.html": "/IraisAvila/Project2/tree/master/index.html",
-    "main.00014088.css.map": "/IraisAvila/Project2/tree/master/static/css/main.00014088.css.map",
-    "main.2bd084cd.js.map": "/IraisAvila/Project2/tree/master/static/js/main.2bd084cd.js.map",
-    "787.63e6435d.chunk.js.map": "/IraisAvila/Project2/tree/master/static/js/787.63e6435d.chunk.js.map"
+    "main.css": "/IraisAvila/Project2/static/css/main.00014088.css",
+    "main.js": "/IraisAvila/Project2/static/js/main.c0b89d84.js",
+    "static/js/787.63e6435d.chunk.js": "/IraisAvila/Project2/static/js/787.63e6435d.chunk.js",
+    "index.html": "/IraisAvila/Project2/index.html",
+    "main.00014088.css.map": "/IraisAvila/Project2/static/css/main.00014088.css.map",
+    "main.c0b89d84.js.map": "/IraisAvila/Project2/static/js/main.c0b89d84.js.map",
+    "787.63e6435d.chunk.js.map": "/IraisAvila/Project2/static/js/787.63e6435d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00014088.css",
-    "static/js/main.2bd084cd.js"
+    "static/js/main.c0b89d84.js"
   ]
 }

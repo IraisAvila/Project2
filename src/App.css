@@ -6,7 +6,7 @@ img {
 /* Header 3 Styling */
 h3 {
   text-align: center;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* Header 1 Styling */
 h1 {
@@ -22,13 +22,16 @@ h2 {
   background-color: #15cdfc;
   font-weight: bold;
   position: relative;
-  animation: mymove 8s infinite;
+  animation: mymove 10s infinite;
   animation-timing-function: ease;
 }
 @keyframes mymove {
-  from {left: 0px;}
-  to {left: 700px;}
-
+  from {
+    left: 0px;
+  }
+  to {
+    left: 700px;
+  }
 }
 
 /* Unordered List Styling */
@@ -55,7 +58,6 @@ body {
 
 form {
   padding-left: 43%;
-  
 }
 
 @media screen and (max-width: 480px) {

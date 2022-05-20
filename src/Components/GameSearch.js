@@ -13,7 +13,6 @@ function Gamesearch() {
     const handleSubmit = (event) => {
         event.preventDefault()
     const gamesearch2 = gamesearch.filter(game => game.name == search)
-    console.log(gamesearch2)
     setGameSearch3(gamesearch2[0])
     }
 

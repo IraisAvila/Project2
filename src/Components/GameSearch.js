@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 function Gamesearch() {
-    const [gamesearch, setGameSearch] = useState([]);
+    const [gamesearch, setGameSearch] = useState([])
     const [search, setSearch] = useState("")
     const [message, setMessage] = useState("")
+    const [gamesearch3, setGameSearch3] = useState(null)
 
     const updatedSearch = (event) => {
         setSearch(event.target.value)
@@ -11,8 +12,12 @@ function Gamesearch() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        //gamesearch.filter(game)
+    const gamesearch2 = gamesearch.filter(game => game.name == search)
+    console.log(gamesearch2)
+    setGameSearch3(gamesearch2[0])
     }
+
+
     const options = {
         method: 'GET',
         headers: {
@@ -31,14 +36,17 @@ function Gamesearch() {
     }
 
     let searchDisplay = "";
-    if (gamesearch !== null) {
+    if (gamesearch3 !== null) {
+        const genres = gamesearch3.genres.map(genre => genre.name + ", ")
+        const platforms = gamesearch3.parent_platforms.map(platform => platform.platform.name + ", ")
+        const stores = gamesearch3.stores.map(store => store.store.name + ", ")
       searchDisplay = (
         <div>
-          {/*<h3>Name: {gamesearch.results[0].name}</h3>*/}
-          <h3>Genre: </h3>
-          <h3>Platforms: </h3>
-          <h3>Where to buy: </h3>
-          {/*<img src={gamesearch.results[0].background_image} alt={gamesearch.results[0].name}/>*/}
+          <h3>Name: {gamesearch3.name}</h3>
+          <h3>Genre: {genres}</h3>
+          <h3>Platforms: {platforms}</h3>
+          <h3>Where to buy: {stores} </h3>
+          <img src={gamesearch3.background_image} alt={gamesearch3.name}/>
         </div>
       );
     }
@@ -46,7 +54,6 @@ function Gamesearch() {
         <div className="App">
             <h1>Game SEARCH:</h1>
             <form onSubmit={handleSubmit}>
-                <label>Title:</label>
                 <input onChange={updatedSearch} value={search} type="text" placeholder="Game Name"/>
                 <input type="submit" value="Find Game Info"/>
             </form>
